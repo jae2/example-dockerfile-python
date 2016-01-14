@@ -1,6 +1,6 @@
-FROM gliderlabs/alpine:3.1
+FROM centos:latest
 
-RUN apk-install python
+RUN yum install python
 ADD . /app
 WORKDIR /app
 CMD python -m SimpleHTTPServer 5000
